@@ -24,17 +24,17 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Command.add('login', (username, password) => {
-    cy.visit(Live);
+// Cypress.Command.add('login', (username, password) => {
+//     cy.visit(Live);
 
-    Cypress.on('uncaught:exception', (err, runnable) => {
-      // handling uncaught:exception defineLocale error
+//     Cypress.on('uncaught:exception', (err, runnable) => {
+//       // handling uncaught:exception defineLocale error
 
-      return false
-    })
+//       return false
+//     })
 
-    cy.get('#inpEmail').clear().type('000000009')
-    cy.get('#inpPassword').clear().type('Qcaz123456')
-    cy.wait(2000)
-    cy.get('#lblMasuk').click()
-})
+//     cy.get('#inpEmail').clear().type('000000009')
+//     cy.get('#inpPassword').clear().type('Qcaz123456')
+//     cy.wait(2000)
+//     cy.get('#lblMasuk').click()
+// })
