@@ -2,9 +2,6 @@
 import _ from 'lodash'
 
 // URL Environtment
-const Xdemo = "https://xdemo.assetlogistik.id";
-const RC = "https://rc.azlogistik.id/";
-const Live = "https://muatmuat.com/";
 
 // const Xdemo = "example.com"
 
@@ -23,7 +20,7 @@ describe('1. check dealer and karoseri', () => {
   //   })
 
   //   // Click Dealer Card
-  //   cy.get('[href="https://muatmuat.com/traffic/redirect_buyer?force=dealer-karoseri&kategoriID=40&subKategoriID=23"] > .card-border').click();
+  //   cy.get('[href="https://baseURL.com/traffic/redirect_buyer?force=dealer-karoseri&kategoriID=40&subKategoriID=23"] > .card-border').click();
   //   cy.wait(1000);
     
   //   cy.get('#form-pencarian').type('Surabaya{enter}')
@@ -77,7 +74,7 @@ describe('1. check dealer and karoseri', () => {
       return false
     })
 
-    cy.get('[href="https://muatmuat.com/traffic/redirect_buyer?force=dealer-karoseri&kategoriID=40&subKategoriID=23"] >.card-border').click(); // Click Dealer Card
+    cy.get('[href="https://baseURL.com/traffic/redirect_buyer?force=dealer-karoseri&kategoriID=40&subKategoriID=23"] >.card-border').click(); // Click Dealer Card
     cy.wait(1000);
 
     cy.get('[data-form="0"] >.card-body').click() // to click Katalog Produk Dealer

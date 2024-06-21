@@ -1,0 +1,3 @@
+# keep the trash files
+cypress/e2e/00. General.cy.js
+cypress/e2e/0-general.cy.js
