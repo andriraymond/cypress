@@ -1,3 +1,18 @@
 # keep the trash filews
 cypress/e2e/00. General.cy.js
 cypress/e2e/0-general.cy.js
+
+# keep support
+cypress/support/readExcel.js
+cypress/support/utils.js
+
+# keep the node_modules
+node_modules/
+
+# keep the trash files
+cypress/e2e/trash1.cy.js
+cypress/e2e/trash2.cy.js
+cypress/e2e/trash3.cy.js
+cypress/e2e/taumtaum/trash1.cy.js
+cypress/e2e/taumtaum/trash2.cy.js
+cypress/e2e/taumtaum/trash3.cy.js
