@@ -22,9 +22,7 @@
 //
 //
 // -- This will overwrite an existing command --
-<<<<<<< HEAD
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-=======
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // Cypress.Command.add('login', (username, password) => {
@@ -41,4 +39,3 @@
 //     cy.wait(2000)
 //     cy.get('#lblMasuk').click()
 // })
->>>>>>> c816e95324ac18659ae3b6d88a923a30a276a1c7

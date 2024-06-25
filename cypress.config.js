@@ -3,6 +3,9 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   redirectionLimit: 40,
   defaultCommandTimeout: 10000,
+  screenshotOnRunFailure: true,
+  screenshotsFolder: "cypress/screenshots",
+  watchForFileChanges: false,
   e2e: {
     // viewportHeight: 1080,
     // viewportWidth: 1920,
@@ -11,6 +14,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "baseURL",
+    baseUrl: "https://xdemo.assetlogistik.id",
   },
 });

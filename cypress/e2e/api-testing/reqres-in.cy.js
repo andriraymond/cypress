@@ -1,6 +1,7 @@
-describe('reqres-in api testing with GET requests', () =>{
-    const baseUrl = 'https://reqres.in';
+// 
+const baseUrl = 'https://reqres.in';
 
+describe('reqres-in api testing with GET requests', () =>{
     it('GET - LIST USERS', () => {
         cy.request('GET', `${baseUrl}/api/users?page=2`)
         .its('status')
@@ -49,8 +50,6 @@ describe('reqres-in api testing with GET requests', () =>{
 });
 
 describe('reqres-in api testing with POST method', () => {
-    const baseUrl = "https://reqres.in";
-
     it('POST - CREATE', () => {
         cy.request({
             method: "POST", 
@@ -120,6 +119,52 @@ describe('reqres-in api testing with POST method', () => {
         expect(response.status).to.equal(400);
         });
     });
+});
 
+describe('reqres-in api testing with PUT method', () => {
+    it('PUT - UPDATE', () => {
+        cy.request({
+            method: "PUT",
+            url: `${baseUrl}/api/users/2`,
+            body: {
+                'name': 'morpheus',
+                "job": 'zion president'
+            },
+        }).then((response) => {
+            cy.log('Response:', response);
+        expect(response.status).to.equal(200);
+        })
+    })
+});
 
-}); 
+describe('reqres-in api testing with PATCH method', () => {
+    it('PATCH - UPDATE', () => {
+        cy.request({
+            method: "PATCH",
+            url: `${baseUrl}/api/users/2`,
+            body: {
+                'name': 'morpheus',
+                "job": 'zion president'
+            },
+        }).then((response) => {
+            cy.log('Response:', response);
+        expect(response.status).to.equal(200);
+        })
+    })
+});
+
+describe('reqres-in api testing with DELETE method', () => {
+    it('DELETE - DELETE', () => {
+        cy.request({
+            method: "DELETE",
+            url: `${baseUrl}/api/users/2`,
+            body: {
+                'name': 'morpheus',
+                "job": 'zion president'
+            },
+        }).then((response) => {
+            cy.log('Response:', response);
+        expect(response.status).to.equal(204);
+        })
+    })
+});
