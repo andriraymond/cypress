@@ -28,7 +28,7 @@ module.exports = defineConfig({
       });
     },
     // Don't forget to change the url in the config
-    baseUrl: "",
+    baseUrl: "https://xdemo.assetlogistik.id",
     // demoqaURL: "https://demoqa.com/webtables",
   },
 });
