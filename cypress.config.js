@@ -28,7 +28,7 @@ module.exports = defineConfig({
       });
     },
     // Don't forget to change the url in the config
-    baseUrl: "",
+    baseUrl: "https://muatmuat.com/",
     // demoqaURL: "https://demoqa.com/webtables",
   },
 });

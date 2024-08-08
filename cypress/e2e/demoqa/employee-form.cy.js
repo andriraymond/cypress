@@ -1,5 +1,5 @@
-const { readExcelData } = require("../../support/readExcel");
-const { chunkArray } = require("../../support/utils");
+// const { readExcelData } = require("../../support/readExcel");
+// const { chunkArray } = require("../../support/utils");
 
 describe("Employee Registration Form Functional Tests in demoqa", () => {
   beforeEach("can access employee data page demoqa", () => {
